@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,700,700i,900|Source+Sans+Pro:300,300i,400,400i,700,700i&display=swap');
+
+$text-color: black;
+$white: white;
+$black: black;
+$light-bg: white;
+$dark-bg: black;
+$primary-color: #efeeeb;
+$source-sans-pro: 'Source Sans Pro', sans-serif;
+$default-font: $source-sans-pro;
+$montserrat: 'Montserrat', sans-serif;
+$small: 8rem;
+$medium: 16rem;
+
+* {
+  box-sizing: border-box;
+  font-family: $default-font;
+
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: $text-color;
+}
+
+// UTILS //
+
+.container {
+  margin: auto 12em;
+}
+
+.flex {
+  display: flex;
+
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.margin-small {
+  margin: 2rem;
+}
+
+
+
+
+// TOP NAV //
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: $dark-bg;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: $white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: $white;
+  color: $dark-bg;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: $white;
+  color: $black;
+}
+
+// FORM //
+
+form.login input {
+  max-width: $medium;
+  margin: 0.5rem 0rem 1rem 0rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+
+// BUTTON //
+
+button.button {
+  background-color: $black; /* Green */
+  border: none;
+  max-width: $small;
+  color: $white;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
